@@ -11,7 +11,6 @@
 <body>
   <main>
     <header id="header">
-
     	<div class="menu_bar">
     		<button onclick="openMenu()"><img src="images/icon-menu.svg"></button>
     	</div>
@@ -52,8 +51,7 @@
           <img src="images/image-product-1.jpg" alt="image_1" class="image_preview"  onclick="openGallery(this)">
         </div>
 
-        <div class="images_smallbox">
-          <ul>
+          <ul class="images_smallbox">
             <li>
             	<img src="images/image-product-1-thumbnail.jpg" alt="image_1" onclick="changeImage(this)">
             </li>
@@ -67,7 +65,6 @@
             	<img src="images/image-product-4-thumbnail.jpg" alt="image_4" onclick="changeImage(this)">
             </li>
           </ul>
-        </div>
       </div>
 
       <div class="image_btns" >
@@ -103,10 +100,14 @@
         </div>
         </div>
 
-      </div>     	
+        
+
+      </div>
+
+     	
     </section>
 
-
+    <!--- Checkout box --->
     <div id="checkout_box" style="display: none;" >
     	<div class="title_part">
     		<h2>Cart</h2>
@@ -133,34 +134,36 @@
     </div>
 
     <div id="light_box" style="display: none;">
-    	<div class="close_part">
-    		<img src="images/icon-close.svg" alt="close button" onclick="closeGallery()">
-    	</div>
+    	<div class="light_box_container">
+			<div class="close_part">
+				<img src="images/icon-close.svg" alt="close button" onclick="closeGallery()">
+			</div>
+	
+			<div class="images_part">
+				<button onclick="change(-1)"><img src="images/icon-previous.svg" alt="previous button"></button>
+	
+				<img src="images/image-product-1.jpg" alt="image_1" class="image_preview">
+				
+				<button onclick="change(1)" class="next_button"><img src="images/icon-next.svg" alt="next button"></button>
+			</div>
+	
 
-    	<div class="images_part">
-    		<button onclick="change(-1)"><img src="images/icon-previous.svg" alt="previous button"></button>
-
-    		<img src="images/image-product-1.jpg" alt="image_1" class="image_preview">
-    		
-    		<button onclick="change(1)" class="next_button"><img src="images/icon-next.svg" alt="next button"></button>
-    	</div>
-
-    	<div class="images_smallbox">
-          <ul>
-            <li>
-            	<img src="images/image-product-1-thumbnail.jpg" alt="image_1" onclick="changeImage(this)">
-            </li>
-            <li>
-            	<img src="images/image-product-2-thumbnail.jpg" alt="image_2" onclick="changeImage(this)">
-            </li>
-            <li>
-            	<img src="images/image-product-3-thumbnail.jpg" alt="image_3" onclick="changeImage(this)">
-            </li>
-            <li>
-            	<img src="images/image-product-4-thumbnail.jpg" alt="image_4" onclick="changeImage(this)">
-            </li>
-          </ul>
-        </div>
+			  <ul class="images_smallbox">
+				<li>
+					<img src="images/image-product-1-thumbnail.jpg" alt="image_1" onclick="changeImage(this)">
+				</li>
+				<li>
+					<img src="images/image-product-2-thumbnail.jpg" alt="image_2" onclick="changeImage(this)">
+				</li>
+				<li>
+					<img src="images/image-product-3-thumbnail.jpg" alt="image_3" onclick="changeImage(this)">
+				</li>
+				<li>
+					<img src="images/image-product-4-thumbnail.jpg" alt="image_4" onclick="changeImage(this)">
+				</li>
+			  </ul>
+	
+		</div>
     </div>
     <footer class="attribution">
       Coded by <a href="#"><strong>Emir Yaşa</strong></a>
